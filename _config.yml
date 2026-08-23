@@ -23,7 +23,7 @@ plugins:
 # named <your-username>.github.io), set baseurl below to "/<repo-name>".
 # If you're not sure, leave it blank, publish once, and check the URL
 # GitHub Pages gives you in Settings > Pages — update this line to match.
-baseurl: ""
+baseurl: "/SER375-CSC575-AI-Driven-Software-Engineering" 
 url: ""
 
 # --- Theme behavior -----------------------------------------------------

@@ -2,6 +2,8 @@
 
 Static documentation site covering prompt engineering, AI agents, custom GPTs, and Claude Code, built for GitHub Pages using the [Just the Docs](https://just-the-docs.com/) Jekyll theme (loaded remotely — no local build required to publish).
 
+# Course Site - https://krutishah45.github.io/SER375-CSC575-AI-Driven-Software-Engineering/
+
 ## Repository layout
 
 ```

@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------------------
+# Jekyll + Just the Docs configuration for the SER375/CSC575 course site.
+# This file must live at the ROOT of the GitHub repository (same level as
+# index.md), not inside a subfolder, for GitHub Pages to find it.
+# ---------------------------------------------------------------------------
+
+title: AI Tools for Software Engineers
+description: >-
+  Course companion for SER375/CSC575 — AI-Driven Software Engineering.
+  Prompt engineering, AI agents, custom GPTs, and Claude Code, explained
+  from zero background.
+
+# Just the Docs, loaded as a remote theme — no local install/build needed.
+# GitHub Pages' standard Jekyll build supports the jekyll-remote-theme
+# plugin out of the box.
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+# IMPORTANT: if this repo is published at
+#   https://<your-username>.github.io/<repo-name>/
+# (a normal "project site," which is the default for a repo that is not
+# named <your-username>.github.io), set baseurl below to "/<repo-name>".
+# If you're not sure, leave it blank, publish once, and check the URL
+# GitHub Pages gives you in Settings > Pages — update this line to match.
+baseurl: ""
+url: ""
+
+# --- Theme behavior -----------------------------------------------------
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+nav_sort: default          # respects each page's nav_order front matter
+aux_links:
+  "Course home (Quinnipiac SCE)":
+    - "#"                  # replace with your department/course page URL
+
+footer_content: >-
+  Course companion material for SER375/CSC575, AI-Driven Software
+  Engineering, Quinnipiac University School of Computing and Engineering.
+
+# --- Markdown ------------------------------------------------------------
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge

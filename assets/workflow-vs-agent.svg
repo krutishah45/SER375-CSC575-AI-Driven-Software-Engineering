@@ -1,0 +1,43 @@
+<svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="900" height="380" fill="#ffffff"/>
+  <text x="450" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F3864">Workflow vs. Agent</text>
+
+  <!-- Workflow side -->
+  <text x="220" y="70" text-anchor="middle" font-size="16" font-weight="bold" fill="#2E75B6">Workflow (fixed path)</text>
+  <rect x="60" y="100" width="100" height="50" rx="6" fill="#2E75B6"/>
+  <text x="110" y="130" text-anchor="middle" font-size="12" fill="#fff">Step 1</text>
+  <rect x="190" y="100" width="100" height="50" rx="6" fill="#2E75B6"/>
+  <text x="240" y="130" text-anchor="middle" font-size="12" fill="#fff">Step 2</text>
+  <rect x="320" y="100" width="100" height="50" rx="6" fill="#2E75B6"/>
+  <text x="370" y="130" text-anchor="middle" font-size="12" fill="#fff">Step 3</text>
+  <line x1="160" y1="125" x2="190" y2="125" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="290" y1="125" x2="320" y2="125" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="220" y="185" text-anchor="middle" font-size="12" fill="#555">Code defines the exact order of steps.</text>
+  <text x="220" y="203" text-anchor="middle" font-size="12" fill="#555">The LLM fills in each step, but does not</text>
+  <text x="220" y="221" text-anchor="middle" font-size="12" fill="#555">decide what happens next.</text>
+
+  <!-- divider -->
+  <line x1="450" y1="60" x2="450" y2="340" stroke="#CCCCCC" stroke-width="1"/>
+
+  <!-- Agent side -->
+  <text x="680" y="70" text-anchor="middle" font-size="16" font-weight="bold" fill="#C0392B">Agent (dynamic loop)</text>
+  <circle cx="680" cy="180" r="70" fill="none" stroke="#C0392B" stroke-width="2"/>
+  <text x="680" y="140" text-anchor="middle" font-size="12" fill="#C0392B" font-weight="bold">Think</text>
+  <text x="620" y="215" text-anchor="middle" font-size="12" fill="#C0392B" font-weight="bold">Act</text>
+  <text x="740" y="215" text-anchor="middle" font-size="12" fill="#C0392B" font-weight="bold">Observe</text>
+  <path d="M 680 110 A 70 70 0 0 1 738 208" fill="none" stroke="#C0392B" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <path d="M 738 208 A 70 70 0 0 1 622 208" fill="none" stroke="#C0392B" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <path d="M 622 208 A 70 70 0 0 1 680 110" fill="none" stroke="#C0392B" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="680" y="285" text-anchor="middle" font-size="12" fill="#555">The model decides its own next step</text>
+  <text x="680" y="303" text-anchor="middle" font-size="12" fill="#555">based on what it observes, looping until</text>
+  <text x="680" y="321" text-anchor="middle" font-size="12" fill="#555">the goal is met or it needs your input.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#333"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#C0392B"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="900" height="260" fill="#ffffff"/>
+  <text x="450" y="32" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F3864">A Typical Claude Code Turn</text>
+
+  <g>
+    <rect x="30" y="90" width="150" height="60" rx="8" fill="#2E75B6"/>
+    <text x="105" y="115" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">You ask</text>
+    <text x="105" y="133" text-anchor="middle" font-size="10" fill="#EAF1F8">in plain English</text>
+  </g>
+  <line x1="180" y1="120" x2="215" y2="120" stroke="#333" stroke-width="2" marker-end="url(#a1)"/>
+
+  <g>
+    <rect x="220" y="90" width="150" height="60" rx="8" fill="#2E75B6"/>
+    <text x="295" y="115" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">Claude reads</text>
+    <text x="295" y="133" text-anchor="middle" font-size="10" fill="#EAF1F8">your codebase/files</text>
+  </g>
+  <line x1="370" y1="120" x2="405" y2="120" stroke="#333" stroke-width="2" marker-end="url(#a1)"/>
+
+  <g>
+    <rect x="410" y="90" width="150" height="60" rx="8" fill="#2E75B6"/>
+    <text x="485" y="115" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">Proposes a plan</text>
+    <text x="485" y="133" text-anchor="middle" font-size="10" fill="#EAF1F8">or a diff/change</text>
+  </g>
+  <line x1="560" y1="120" x2="595" y2="120" stroke="#333" stroke-width="2" marker-end="url(#a1)"/>
+
+  <g>
+    <rect x="600" y="90" width="150" height="60" rx="8" fill="#1F3864"/>
+    <text x="675" y="115" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">You approve</text>
+    <text x="675" y="133" text-anchor="middle" font-size="10" fill="#DCE6F2">or request changes</text>
+  </g>
+  <line x1="750" y1="120" x2="785" y2="120" stroke="#333" stroke-width="2" marker-end="url(#a1)"/>
+
+  <g>
+    <rect x="790" y="90" width="90" height="60" rx="8" fill="#2E75B6"/>
+    <text x="835" y="115" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">Files</text>
+    <text x="835" y="133" text-anchor="middle" font-size="10" fill="#EAF1F8">updated</text>
+  </g>
+
+  <text x="450" y="210" text-anchor="middle" font-size="12" fill="#555">Nothing is written to disk until you approve it — you stay the reviewer at every step.</text>
+
+  <defs>
+    <marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#333"/>
+    </marker>
+  </defs>
+</svg>
